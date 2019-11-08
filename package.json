@@ -1,0 +1,19 @@
+{
+  "name": "labot_js",
+  "version": "1.0.0",
+  "description": "None",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdonaka/LABot_JS.git"
+  },
+  "author": "mdonaka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdonaka/LABot_JS/issues"
+  },
+  "homepage": "https://github.com/mdonaka/LABot_JS#readme"
+}
