@@ -1,9 +1,8 @@
-exports.handler = async (event) => {
 
-	const response = {
-		statusCode: 200,
-		body: JSON.stringify('Hello from Lambda!'),
-	};
+// const decrypter = require("./decrypt")
+const decrypter = require("./../decrypt_local")
 
-	return response;
+exports.handler = async (event, context, callback) => {
+	const URL = await decrypter.get("WebhookURL");
+	return URL;
 };
