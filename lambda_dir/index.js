@@ -1,6 +1,6 @@
 
-// const decrypter = require("./decrypt")
-const decrypter = require("./../decrypt_local")
+// const decrypter = require("./env")
+const decrypter = require("./../env_local")
 
 exports.handler = async (event, context, callback) => {
 	const URL = await decrypter.get("WebhookURL");
