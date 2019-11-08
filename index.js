@@ -1,6 +1,11 @@
 
 const app = require("./lambda_dir/index")
 
-res = app.handler();
+const main = async function() {
+	res = await app.handler();
 
-console.log(res);
+	console.log(res);
+}
+
+
+main();

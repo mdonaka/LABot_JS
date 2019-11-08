@@ -1,9 +1,8 @@
 
-env = []
+require("dotenv").config()
+const env = process.env;
 
 exports.get = (key) => { 
-	if (!env[key]) {
-		env[key] = 10;
-	}
-	return env[key];
+	if(env[key]){return env[key];}
+	return -1;
 }

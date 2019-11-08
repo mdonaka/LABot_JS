@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mdonaka/LABot_JS/issues"
   },
-  "homepage": "https://github.com/mdonaka/LABot_JS#readme"
+  "homepage": "https://github.com/mdonaka/LABot_JS#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
