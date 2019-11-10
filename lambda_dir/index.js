@@ -1,6 +1,7 @@
 
 //const decrypter = require("./env")
 const decrypter = require("./../env_local")
+const calender = require("./google_calender")
 
 const request = require("request");
 
@@ -17,6 +18,10 @@ function doRequest(options) {
 }
 
 exports.handler = async (event, context, callback) => {
+	const res = await calender.getCalender();
+	return {statusCode:200, res:res};
+
+	/*
 	const URL = await decrypter.get("WebhookURL");
 
 	const data = {
@@ -27,4 +32,5 @@ exports.handler = async (event, context, callback) => {
 	const res = await doRequest(data);
 
 	return {statusCode:200, res:res};
+	*/
 };
