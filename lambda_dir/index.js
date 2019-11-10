@@ -18,10 +18,11 @@ function doRequest(options) {
 }
 
 exports.handler = async (event, context, callback) => {
+	/**/
 	const res = await calender.getCalender();
 	return {statusCode:200, res:res};
 
-	/*
+	/*/
 	const URL = await decrypter.get("WebhookURL");
 
 	const data = {
@@ -32,5 +33,5 @@ exports.handler = async (event, context, callback) => {
 	const res = await doRequest(data);
 
 	return {statusCode:200, res:res};
-	*/
+	/**/
 };
