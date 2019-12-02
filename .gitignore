@@ -1,5 +1,6 @@
 .env
 *.zip
 node_modules/*
+.eslintrc.json
 lambda_dir/node_modules/*
 lambda_dir/google_key.json

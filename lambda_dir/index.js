@@ -4,7 +4,7 @@ const calender = require('./google_calender');
 
 const request = require('request');
 
-function doRequest(options) {
+const doRequest = (options) => {
   return new Promise(function(resolve, reject) {
     request.post(options, function(error, res, body) {
       if (!error && res.statusCode == 200) {
@@ -14,22 +14,22 @@ function doRequest(options) {
       }
     });
   });
-}
+};
 
 exports.handler = async (event, context, callback) => {
-  const res = await calender.getCalender();
-  return {statusCode: 200, res: res};
+  const cal = await calender.getCalender();
+  return {statusCode: 200, res: cal};
 
   /*
-	const URL = await decrypter.get("WebhookURL");
+  const URL = await decrypter.get('WebhookURL');
 
-	const data = {
-		url: URL,
-		headers: {"Content-type": "application/json"},
-		json: {text: "Hello World from nodejs"}
-	};
-	const res = await doRequest(data);
+  const data = {
+    url: URL,
+    headers: {'Content-type': 'application/json'},
+    json: {text: 'Hello World from nodejs'},
+  };
+  const res = await doRequest(data);
 
-	return {statusCode:200, res:res};
+  return {statusCode: 200, res: res, cal: cal};
 	*/
 };
