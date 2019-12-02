@@ -20,5 +20,9 @@
     "dotenv": "^8.2.0",
     "googleapis": "^45.0.0",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-google": "^0.14.0"
   }
 }

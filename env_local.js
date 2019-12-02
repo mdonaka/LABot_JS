@@ -1,8 +1,9 @@
-
-require("dotenv").config()
+require('dotenv').config();
 const env = process.env;
 
-exports.get = (key) => { 
-	if(env[key]){return env[key];}
-	return -1;
-}
+exports.get = (key) => {
+  if (env[key]) {
+    return env[key];
+  }
+  return -1;
+};
