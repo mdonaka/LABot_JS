@@ -17,7 +17,8 @@ const doRequest = (options) => {
 };
 
 exports.handler = async (event, context, callback) => {
-  const cal = await calender.getCalender();
+  const id = decrypter.get('calenderID');
+  const cal = await calender.getCalender(id);
   return {statusCode: 200, res: cal};
 
   /*
