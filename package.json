@@ -19,7 +19,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "googleapis": "^45.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "request": "^2.88.0"
   },
   "devDependencies": {
